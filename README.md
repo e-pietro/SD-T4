@@ -73,7 +73,7 @@ Menor valor positivo representável: 2^−23 × 2^−126 ≈ 1.4013×10^−45
 5. Simulação
    
 Instruções de Execução
-Para simular o projeto, utilize o simulador  Questa. Carregue os arquivos do projeto (MINHA_FPU_FSM.sv e o testbench MINHA_FPU_tb.sv).
+Para simular o projeto, utilize o simulador  Questa. Carregue os arquivos do projeto (MINHA_FPU.sv e o testbench MINHA_FPU_tb.sv).
 
 No console do simulador, execute o script de simulação sim.do com o seguinte comando:
 do sim.do
