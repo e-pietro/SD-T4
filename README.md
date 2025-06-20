@@ -64,3 +64,17 @@ Representação de Números em Ponto Flutuante (IEEE 754 - 32 bits)
 | Zeros               | 0 ou 1           | 0            | Igual a zero         | 0                                                   |
 
 
+Expoente (real): -126 a +127 para números normais (armazenado como 00000001 até 11111110)
+
+Maior valor positivo representável: (2− 2^−23) × 2^127 ≈ 3.402823×10^38
+ 
+Menor valor positivo representável: 2^−23 × 2^−126 ≈ 1.4013×10^−45
+
+5. Simulação
+   
+Instruções de Execução
+Para simular o projeto, utilize o simulador  Questa. Carregue os arquivos do projeto (MINHA_FPU_FSM.sv e o testbench MINHA_FPU_tb.sv).
+
+No console do simulador, execute o script de simulação sim.do com o seguinte comando:
+do sim.do
+
