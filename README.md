@@ -18,11 +18,14 @@ Y = 31 – 8 = 23 bits (mantissa)
 A FPU foi projetada como uma Máquina de Estados Finitos (FSM) com 5 estágiosonde cada um executa uma tarefa específica por ciclo de clock:
 
 S_IDLE: Estado ocioso, aguardando para capturar as entradas (Op_A_in, Op_B_in).
+
 S_DECODE_ALIGN: Decodifica as entradas e realiza o alinhamento das mantissas, deslocando a do menor expoente para que ambas fiquem na mesma escala.
+
 S_ADD_SUB: Com as mantissas alinhadas, realiza a operação de soma ou subtração.
+
 S_NORMALIZE: Pega o resultado bruto e o normaliza, ajustando-o ao formato padrão de ponto flutuante (1.xxxx... * 2^exp).
+
 S_FINALIZE: Monta o dado de saída de 32 bits e calcula o status final da operação (Overflow, Exact, etc.).
-Essa arquitetura, embora leve 5 ciclos para produzir um resultado, torna o código extremamente organizado e mais fácil de depurar em comparação com um design de ciclo único.
 
 4. Espectro Numérico
 
