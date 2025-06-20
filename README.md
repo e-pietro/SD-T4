@@ -53,5 +53,14 @@ Essa arquitetura, embora leve 5 ciclos para produzir um resultado, torna o códi
 
 4. Espectro Numérico
 
-![image](https://github.com/user-attachments/assets/a0e69c51-36c7-49a1-91b1-0294a23fe145)
+Representação de Números em Ponto Flutuante (IEEE 754 - 32 bits)
+
+| Tipo de Número      | Bit de Sinal (S) | Expoente (E) | Mantissa (M)         | Valor Aproximado da Magnitude                       |
+|---------------------|------------------|--------------|----------------------|-----------------------------------------------------|
+| Inválido            | 0 ou 1           | 255          | Diferente de zero    | N/A                                                 |
+| Overflow            | 0 ou 1           | 255          | Igual a zero         | ∞                                                   |
+| Normais             | 0 ou 1           | 1 a 254      | Qualquer valor       | ~1.175 × 10⁻³⁸ a ~3.4028 × 10³⁸                     |
+| Underflow           | 0 ou 1           | 0            | Diferente de zero    | ~1.4 × 10⁻⁴⁵ a ~1.175 × 10⁻³⁸                       |
+| Zeros               | 0 ou 1           | 0            | Igual a zero         | 0                                                   |
+
 
