@@ -1,4 +1,4 @@
-module MINHA_FPU_FSM (
+module MINHA_FPU (
     input logic clk,
     input logic reset_n,
     input logic [31:0] Op_A_in,
