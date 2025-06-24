@@ -57,3 +57,7 @@ Para simular o projeto, utilize o simulador  Questa. Carregue os arquivos do pro
 No console do simulador, execute o script de simulação sim.do com o seguinte comando:
 do sim.do
 
+6. Referências
+   https://www.youtube.com/watch?v=Khb734JAR10
+   Utilizado para entender os casos especiais
+
